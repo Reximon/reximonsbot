@@ -65,7 +65,7 @@ client.on("message", async message => {
                 if (amount < 1) return message.reply('¡Tienes que borrar al menos 1 mensaje como mínimo, bruda!'); 
 
                 await message.channel.messages.fetch({ limit: amount }).then(messages => { 
-                    message.channel.bulkDelete(messages /*Si los mensajes son anteriores a 14 días(Política de la API de DISCORD.)*/ )});
+                    message.channel.bulkDelete(messages /* Si los mensajes son anteriores a 14 días(Política de la API de DISCORD.)*/ )});
             break;
 
         case "decir": 
